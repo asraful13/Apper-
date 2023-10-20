@@ -1,9 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+  
+*{
+    margin: 0;
+    padding: 0;
 }
 
+*,
+*::after,
+*::after{
+    box-sizing: border-box;
+}
+    
 body {
     font-family: Poppins, sans-serif;
     background: rgb(246, 244, 254);
@@ -123,6 +130,7 @@ nav {
     padding: 10px 0px;
 }
 
+/* dropdown_menu style start */
 .dropdown_menu {
     position: relative;
 }
@@ -186,6 +194,7 @@ nav {
     margin-top: 20px;
     padding: 0px 0px 0px 11px;
 }
+/* dropdown_menu style End */
 
 /* start hero section style */
 #hero::after {
@@ -204,6 +213,8 @@ nav {
     position: relative;
     animation: hero_left 1.3s;
 }
+
+/* animation style */
 @keyframes hero_left{
     from{
         margin-left: -300px;
@@ -214,7 +225,7 @@ nav {
         opacity: 1;
     }
 }
-
+/* animation end */
 
 .hero_wrapper {
     position: relative;
@@ -247,7 +258,6 @@ nav {
     justify-content: space-between;
     width: 410px;
 }
-
 
 .app_store > a {
     display: block;
@@ -359,7 +369,10 @@ nav {
     left: 75px;
     top: 51px;
 }
+/* start hero section style */
 
+
+/* Currency section style start */
 #currency_company {
     background: rgb(228, 223, 223);
     padding: 86px 0px;
@@ -396,7 +409,10 @@ nav {
 .company_logo > ul > li > img:hover {
     filter: grayscale(0);
 }
+/* Currency section style end */
 
+
+/* app feature section style start here */
 .features_tile {
     text-align: center;
     margin-bottom: 140px;
@@ -468,7 +484,10 @@ nav {
     top: -125px;
     left: 396px;
 }
+/* app feature section style end here */
 
+
+/* style start of about section */
 .about_wrapper {
     display: flex;
 }
@@ -612,7 +631,10 @@ nav {
 .free_trail:hover::before {
     width: 100%;
 }
+/* style end of about section */
 
+
+/* modernUi style start here */
 .modern_left {
     width: 50%;
 }
@@ -715,7 +737,10 @@ nav {
     bottom: 101px;
     right: 63px;
 }
+/* modernUi style end here */
 
+
+/* works section style start here */
 .works_content {
     display: flex;
     justify-content: space-between;
@@ -877,7 +902,10 @@ nav {
     left: 446px;
     text-align: center;
 }
+/* works section style end here */
 
+
+/* here is testimonila section style start */
 #testimonial {
     margin-top: 250px;
 }
@@ -954,7 +982,10 @@ nav {
     top: 0px;
     left: 0px;
 }
+/* here is testimonila section style end */
 
+
+/* pricing section style start here */
 .single_box_wrapper {
     display: flex;
     justify-content: space-between;
@@ -1034,7 +1065,6 @@ nav {
 .toggle_btn>input:checked+label::before {
     left: 38px;
 }
-
 
 .standard_image {
     margin-bottom: 25px;
@@ -1154,9 +1184,12 @@ nav {
 }
 
 .extra_cl > h1, .extra_cl > h3, .extra_cl > p, .extra_cl > ul > li {
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
 }
+/* pricing section style end here  */
 
+
+/* qustion section style started */
 #contact_us {
     margin-top: 20px;
     text-align: center;
@@ -1219,6 +1252,16 @@ nav {
     color: rgb(191, 227, 174);
     cursor: pointer;
 }
+/* qustion section style started */
+
+
+/* mobile screen section style started here */
+.screen_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -45px;
+}
 
 .screen_wrapper > div {
     width: 250px;
@@ -1226,13 +1269,6 @@ nav {
 
 .screen_wrapper > div > img {
     max-width: 100%;
-}
-
-.screen_wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: -45px;
 }
 
 .middle_screen {
@@ -1250,7 +1286,10 @@ nav {
     justify-content: space-between;
     padding: 135px 110px;
 }
+/* mobile screen section style end here */
 
+
+/* app home page double phone screen section */
 .app_left {
     width: 43%;
 }
@@ -1323,7 +1362,10 @@ nav {
 .play_store > li > a:hover .blue {
     opacity: 1;
 }
+/* app home page double phone screen section */
 
+
+/* app story section style start here */
 .story_rapper {
     display: flex;
     justify-content: space-between;
@@ -1457,7 +1499,10 @@ nav {
     position: relative;
     z-index: 1;
 }
+/* app story section style end here */
 
+
+/* footer style started here */
 footer {
     background: rgb(88, 59, 211);
     z-index: -99;
@@ -1579,3 +1624,4 @@ footer {
     bottom: 60px;
     right: 20px;
 }
+/* footer style end here */
